@@ -11,7 +11,7 @@
 ## 3. API Selection
 **API Name:** NASA Open APIs  
 **Why this API?**  
-We chose NASA’s Open APIs due to their rich scientific data, which includes real-time space imagery, planetary exploration data, and asteroid tracking information. This API offers immense potential for data visualization, aligns with educational goals by making space science accessible, and provides a unique opportunity to bridge astronomy with statistical analysis in R.
+We chose NASA’s Open APIs due to their rich scientific data, which includes real-time space imagery, planetary exploration data, and asteroid tracking information. Moreover, the API offers immense potential for generating data visualization, which aligns with educational goals by making space science accessible. Thus, by using the package, it can provide a unique opportunity to bridge astronomy with statistical analysis in R.
 
 ## 4. Project Objectives
 The `nasaR` package aims to:  
