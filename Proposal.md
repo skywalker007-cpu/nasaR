@@ -4,9 +4,9 @@
 **nasaR: An R Package for Accessing NASA's Space Data**
 
 ## 2. Team Members
-- [Team Member 1 Name]
-- [Team Member 2 Name]
-- [Team Member 3 Name]
+- Zetian Zhao
+- Litao Zheng
+- Haoxiang Xu
 
 ## 3. API Selection
 **API Name:** NASA Open APIs  
