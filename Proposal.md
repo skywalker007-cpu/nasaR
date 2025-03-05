@@ -11,7 +11,7 @@
 ## 3. API Selection
 **API Name:** NASA Open APIs  
 **Why choose this API?**  
-We used NASA's Open APIs because they are rich in scientific information that consists of real-time imagery of space, planetary research information, and information about tracking asteroids. Furthermore, the API has tremendous capability to create data visualization that fits the purposes of education through making the science of space understandable. Therefore, using the package, it has the possibility to create an innovative link between astronomy and statistical analysis using R.
+We use NASA's open APIs because they contain a wealth of scientific information, including real-time images of space, planetary research information, and asteroid tracking information. In addition, the APIs have the tremendous ability to create data visualizations that serve educational purposes by making space science accessible. Thus, using this package, innovative links can be made between astronomy and statistical analysis using R.
 
 ## 4. Project Objectives
 The `nasaR` package aims to:  
@@ -57,7 +57,7 @@ Users will interact with the data as follows:
   - Add integration tests with `vcr`, finalize error handling, and write concise documentation.
 
 ## 10. Conclusion
-The `nasaR` package will enable users of `R`, which span from researchers to students, to easily explore the extensive space data provided by NASA. With the integration of easily usable functions along with useful visualizations, it will promote the learning of fields like space science and curiosity-driven inquiry.
+The `nasaR` package will enable `R` users, from researchers to students, to easily explore the vast amount of space data provided by NASA. By integrating easy-to-use features and useful visualizations, it will facilitate learning and curiosity-driven inquiry in areas such as space science.
 
 ---
 *Generated on March 04, 2025*
