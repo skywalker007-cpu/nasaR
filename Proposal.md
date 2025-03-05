@@ -1,4 +1,4 @@
-# Project Proposal: An R Package for Accessing functions using NASA API
+# Project Proposal: An R Package with functions using NASA API
 
 ## 1. Project Title
 **nasaR: An R Package for Accessing NASA's Space Data**
