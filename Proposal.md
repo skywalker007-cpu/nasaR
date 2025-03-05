@@ -11,7 +11,7 @@
 ## 3. API Selection
 **API Name:** NASA Open APIs  
 **Why choose this API?**  
-We chose NASA’s Open APIs due to their rich scientific data, which includes real-time space imagery, planetary exploration data, and asteroid tracking information. Moreover, the API offers immense potential for generating data visualization, which aligns with educational goals by making space science accessible. Thus, by using the package, it can provide a unique opportunity to bridge astronomy with statistical analysis in R.
+We used NASA's Open APIs because they are rich in scientific information that consists of real-time imagery of space, planetary research information, and information about tracking asteroids. Furthermore, the API has tremendous capability to create data visualization that fits the purposes of education through making the science of space understandable. Therefore, using the package, it has the possibility to create an innovative link between astronomy and statistical analysis using R.
 
 ## 4. Project Objectives
 The `nasaR` package aims to:  
@@ -46,7 +46,7 @@ Users will interact with the data as follows:
 
 ## 8. Expected Challenges & Solutions
 - **Challenge**: NASA APIs define hourly request limits.  
-  **Solution**: Implement caching mechanisms to store responses locally and handle rate limits gracefully.   
+  **Solution**: Implement caching mechanisms to store responses locally and handle rate limits gracefully to solve the problem.
 
 ## 9. Timeline & Milestones
 - **Week 1**:  
@@ -57,7 +57,7 @@ Users will interact with the data as follows:
   - Add integration tests with `vcr`, finalize error handling, and write concise documentation.
 
 ## 10. Conclusion
-The `nasaR` package will empower R users, which are ranging from students to researchers, to explore NASA’s vast space data easily. By combining accessible functions with powerful visualizations, it will enhance the learning of space science and encourages curiosity-driven exploration.
+The `nasaR` package will enable users of `R`, which span from researchers to students, to easily explore the extensive space data provided by NASA. With the integration of easily usable functions along with useful visualizations, it will promote the learning of fields like space science and curiosity-driven inquiry.
 
 ---
 *Generated on March 04, 2025*
