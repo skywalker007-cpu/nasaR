@@ -1,1 +1,8 @@
-.Rproj.user
+.Rproj.user/
+.Rproj
+.Rhistory
+.RData
+.Ruserdata
+*.tar.gz
+*.Rcheck/
+.Rbuildignore
