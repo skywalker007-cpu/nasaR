@@ -1,0 +1,17 @@
+language: r
+cache: packages
+
+# Dependencies
+install:
+  - Rscript -e 'install.packages(c("devtools", "roxygen2", "testthat", "remotes"))'
+
+# Build and Check
+script:
+  - R CMD build .
+  - R CMD check --as-cran $(ls -1tr *.tar.gz | tail -n 1)
+
+# Notifications (optional)
+notifications:
+  email:
+    on_success: change
+    on_failure: always
