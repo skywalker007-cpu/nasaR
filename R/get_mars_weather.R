@@ -100,7 +100,16 @@ get_mars_weather <- function(
     sol_row$Season <- if ("Season" %in% names(sol_data)) sol_data$Season else NA
     sol_list[[sol]] <- sol_row
   }
-
+  
+  if (!is.null(sol_data$AT)) {
+    sol_row$AT_avg <- as.numeric(sol_data$AT$av) %||% NA
+    sol_row$AT_min <- as.numeric(sol_data$AT$mn) %||% NA
+    sol_row$AT_max <- as.numeric(sol_data$AT$mx) %||% NA
+  } else {
+    sol_row$AT_avg <- NA
+    sol_row$AT_min <- NA
+    sol_row$AT_max <- NA
+  }
 
   weather_df <- bind_rows(sol_list)
   return(weather_df)

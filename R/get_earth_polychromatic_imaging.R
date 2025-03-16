@@ -7,7 +7,7 @@
 #' @param download_image Save image for /date endpoints, defaults to FALSE.
 #' @return Data frame with metadata or dates, or NULL if no data.
 #' @export
-get_earch_polychromatic_imaging <- function(
+get_earth_polychromatic_imaging <- function(
     api_key = "DEMO_KEY",
     endpoint = "natural",
     date = NULL,
@@ -55,13 +55,13 @@ get_earch_polychromatic_imaging <- function(
   epic_data <- fromJSON(content(response, "text", encoding = "UTF-8"))
 
   if (endpoint %in% c("natural", "enhanced")) {
-    if (length(epic_data) == 0) {
-      warning("No data available for the most recent imagery.")
+    if (length(epic_data) == 0 || (is.data.frame(epic_data) && nrow(epic_data) == 0)) {
+      warning("No data available for the specified date.")
       return(NULL)
     }
     epic_df <- as.data.frame(epic_data, stringsAsFactors = FALSE)
   } else if (endpoint %in% c("natural/date", "enhanced/date")) {
-    if (length(epic_data) == 0) {
+    if (length(epic_data) == 0 || (is.data.frame(epic_data) && nrow(epic_data) == 0)) {
       warning("No data available for the specified date.")
       return(NULL)
     }
@@ -104,19 +104,23 @@ get_earch_polychromatic_imaging <- function(
       }
     }
   } else if (endpoint %in% c("natural/all", "natural/available", "enhanced/all", "enhanced/available")) {
-    if (length(epic_data) == 0) {
-      warning("No available dates found.")
+    if (length(epic_data) == 0 || (is.data.frame(epic_data) && nrow(epic_data) == 0)) {
+      warning("No data available for the specified date.")
       return(NULL)
     }
     epic_df <- data.frame(date = unlist(epic_data), stringsAsFactors = FALSE)
   } else {
     stop("Unsupported endpoint type for data processing.")
   }
+  if (length(epic_data) == 0 || (is.data.frame(epic_data) && nrow(epic_data) == 0)) {
+    warning("No data available for the specified date.")
+    return(NULL)
+  }
   return(epic_df)
 }
 
 api_key <- "XFsDPHBjdABhXfquwqnJSfhwEY4rCZI2ev2NDU0K"
-natural_date <- get_earch_polychromatic_imaging(
+natural_date <- get_earth_polychromatic_imaging(
   endpoint = "natural/date",
   date = "2019-05-30",
   api_key = api_key,
