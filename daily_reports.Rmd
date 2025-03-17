@@ -1,0 +1,52 @@
+---
+title: "Group Project: DATA 534 - Nasa R Package"
+author: "Litao Zheng, Haoxiang Xu, Zetian Zhao"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Daily Reports
+
+## Team Members
+- Zetian Zhao
+- Haoxiang Xu
+- Litao Zheng
+
+Date & Time (PST) | Author | Task Description
+--- | --- | ---
+2025-03-16 21:16:12 | Zetian Zhao | Revised test file to improve coverage
+2025-03-16 21:16:12 | Zetian Zhao | Fixed bugs in test file
+2025-03-16 20:58:59 | Haoxiang Xu | Merged main branch from GitHub
+2025-03-16 20:58:59 | Haoxiang Xu | Integrated latest changes from main branch
+2025-03-16 20:41:20 | Zetian Zhao | Created CONTRIBUTING.md
+2025-03-16 20:41:20 | Zetian Zhao | Outlined contribution guidelines in CONTRIBUTING.md
+2025-03-16 20:37:05 | Zetian Zhao | Created CODE_OF_CONDUCT.md
+2025-03-16 20:37:05 | Zetian Zhao | Established community standards in CODE_OF_CONDUCT.md
+2025-03-16 11:33:43 | Haoxiang Xu | Added unit tests for new functions
+2025-03-15 16:24:15 | Litao Zheng | Added tests to ensure code reliability
+2025-03-15 16:24:15 | Litao Zheng | Wrote test cases for data processing functions
+2025-03-15 16:24:15 | Litao Zheng | Verified test results and fixed issues
+2025-03-14 23:01:56 | Litao Zheng | Implemented two new functions for data analysis
+2025-03-14 23:01:56 | Litao Zheng | Developed function for data visualization
+2025-03-13 17:00:31 | Zetian Zhao | Created .travis.yml for continuous integration
+2025-03-13 17:00:31 | Zetian Zhao | Configured Travis CI in .travis.yml
+2025-03-13 12:09:33 | Zetian Zhao | Renamed files for better clarity
+2025-03-13 12:01:56 | Zetian Zhao | Merged main branch from GitHub
+2025-03-13 12:01:56 | Zetian Zhao | Updated local repository with main branch
+2025-03-13 12:01:53 | Zetian Zhao | Committed local changes to repository
+2025-03-13 11:40:24 | Haoxiang Xu | Updated demo scripts for better demonstration
+2025-03-13 11:40:24 | Haoxiang Xu | Improved readability of demo scripts
+2025-03-13 11:21:01 | Haoxiang Xu | Pushed demo scripts to repository
+2025-03-04 16:26:28 | Zetian Zhao | Merged main branch from GitHub
+2025-03-04 16:26:28 | Zetian Zhao | Resolved conflicts during merge
+2025-03-04 16:26:15 | Zetian Zhao | Updated proposal to version 3
+2025-03-04 16:26:15 | Zetian Zhao | Added new details to proposal version 3
+2025-03-04 16:25:25 | Haoxiang Xu | Updated README with additional information
+2025-03-04 16:24:35 | Haoxiang Xu | Revised README for better readability
+2025-03-04 16:21:16 | Haoxiang Xu | Merged main branch from GitHub
+2025-03-04 16:21:16 | Haoxiang Xu | Incorporated updates from main branch
+2025-03-04 16:20:54 | Zetian Zhao | Updated proposal to version 2
+2025-03-04 16:20:54 | Zetian Zhao | Incorporated initial feedback into proposal version 2
+2025-03-04 16:20:49 | Haoxiang Xu | Initialized README
+2025-03-04 16:17:19 | Zetian Zhao | Created initial proposal draft
+2025-03-04 16:08:58 | Zetian Zhao | Initial project setup and commit
