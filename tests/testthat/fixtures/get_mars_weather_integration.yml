@@ -1,0 +1,551 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nasa.gov/insight_weather/?ver=1&feedtype=json&api_key=<NASA_API_KEY>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-headers: x-requested-with, Content-Type, origin, authorization,
+        accept, client-security-token
+      access-control-allow-methods: POST, GET, OPTIONS, DELETE, PUT
+      access-control-allow-origin: '*'
+      access-control-max-age: '1000'
+      age: '516'
+      cache-control: max-age=60
+      connection: keep-alive
+      content-encoding: gzip
+      content-security-policy: frame-ancestors 'self' https://*.nasa.gov https://nasa.gov;
+      content-type: application/json;charset=utf-8
+      date: Mon, 17 Mar 2025 05:27:56 GMT
+      expires: '{ts ''2025-03-17 05:19:21''}'
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload;
+      - max-age=31536000; includeSubDomains; preload
+      transfer-encoding: chunked
+      vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      via: 1.1 53ee82a7eb57de316cba44c26680b4a6.cloudfront.net (CloudFront), https/1.1
+        api-umbrella (ApacheTrafficServer [cMsSf ])
+      x-amz-cf-id: MzF1uFfY2f2cbW92g_AKgUTRIznk3lvWCxUFn5VYC1Bg6-3hGUQ58g==
+      x-amz-cf-pop: HIO52-P1
+      x-api-umbrella-request-id: clka9ammn715s0e0ppgg
+      x-cache: Hit from cloudfront
+      x-content-type-options: nosniff
+      x-ratelimit-limit: '2000'
+      x-ratelimit-remaining: '1665'
+      x-vcap-request-id: a02890f2-d58d-42f6-7a85-9581a6dd7df8
+      x-xss-protection: 1; mode=block
+    body:
+      encoding: ''
+      file: no
+      string: "{\n  \"675\": {\n    \"AT\": {\n      \"av\": -62.314, \n      \"ct\":
+        177556, \n      \"mn\": -96.872, \n      \"mx\": -15.908\n    }, \n    \"First_UTC\":
+        \"2020-10-19T18:32:20Z\", \n    \"HWS\": {\n      \"av\": 7.233, \n      \"ct\":
+        88628, \n      \"mn\": 1.051, \n      \"mx\": 22.455\n    }, \n    \"Last_UTC\":
+        \"2020-10-20T19:11:55Z\", \n    \"Month_ordinal\": 10, \n    \"Northern_season\":
+        \"early winter\", \n    \"PRE\": {\n      \"av\": 750.563, \n      \"ct\":
+        887776, \n      \"mn\": 722.0901, \n      \"mx\": 768.791\n    }, \n    \"Season\":
+        \"fall\", \n    \"Southern_season\": \"early summer\", \n    \"WD\": {\n      \"0\":
+        {\n        \"compass_degrees\": 0.0, \n        \"compass_point\": \"N\", \n
+        \       \"compass_right\": 0.0, \n        \"compass_up\": 1.0, \n        \"ct\":
+        254\n      }, \n      \"1\": {\n        \"compass_degrees\": 22.5, \n        \"compass_point\":
+        \"NNE\", \n        \"compass_right\": 0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 1\n      }, \n      \"10\": {\n        \"compass_degrees\":
+        225.0, \n        \"compass_point\": \"SW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": -0.707106781187, \n        \"ct\": 8618\n      },
+        \n      \"11\": {\n        \"compass_degrees\": 247.5, \n        \"compass_point\":
+        \"WSW\", \n        \"compass_right\": -0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 1912\n      }, \n      \"12\": {\n        \"compass_degrees\":
+        270.0, \n        \"compass_point\": \"W\", \n        \"compass_right\": -1.0,
+        \n        \"compass_up\": -0.0, \n        \"ct\": 19517\n      }, \n      \"13\":
+        {\n        \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 30283\n      }, \n      \"14\": {\n        \"compass_degrees\":
+        315.0, \n        \"compass_point\": \"NW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 25962\n      },
+        \n      \"15\": {\n        \"compass_degrees\": 337.5, \n        \"compass_point\":
+        \"NNW\", \n        \"compass_right\": -0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 2014\n      }, \n      \"9\": {\n        \"compass_degrees\":
+        202.5, \n        \"compass_point\": \"SSW\", \n        \"compass_right\":
+        -0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        67\n      }, \n      \"most_common\": {\n        \"compass_degrees\": 292.5,
+        \n        \"compass_point\": \"WNW\", \n        \"compass_right\": -0.923879532511,
+        \n        \"compass_up\": 0.382683432365, \n        \"ct\": 30283\n      }\n
+        \   }\n  }, \n  \"676\": {\n    \"AT\": {\n      \"av\": -62.812, \n      \"ct\":
+        177554, \n      \"mn\": -96.912, \n      \"mx\": -16.499\n    }, \n    \"First_UTC\":
+        \"2020-10-20T19:11:55Z\", \n    \"HWS\": {\n      \"av\": 8.526, \n      \"ct\":
+        88250, \n      \"mn\": 1.11, \n      \"mx\": 26.905\n    }, \n    \"Last_UTC\":
+        \"2020-10-21T19:51:31Z\", \n    \"Month_ordinal\": 10, \n    \"Northern_season\":
+        \"early winter\", \n    \"PRE\": {\n      \"av\": 749.09, \n      \"ct\":
+        887777, \n      \"mn\": 722.473, \n      \"mx\": 767.1426\n    }, \n    \"Season\":
+        \"fall\", \n    \"Southern_season\": \"early summer\", \n    \"WD\": {\n      \"0\":
+        {\n        \"compass_degrees\": 0.0, \n        \"compass_point\": \"N\", \n
+        \       \"compass_right\": 0.0, \n        \"compass_up\": 1.0, \n        \"ct\":
+        463\n      }, \n      \"1\": {\n        \"compass_degrees\": 22.5, \n        \"compass_point\":
+        \"NNE\", \n        \"compass_right\": 0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 45\n      }, \n      \"10\": {\n        \"compass_degrees\":
+        225.0, \n        \"compass_point\": \"SW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": -0.707106781187, \n        \"ct\": 2749\n      },
+        \n      \"11\": {\n        \"compass_degrees\": 247.5, \n        \"compass_point\":
+        \"WSW\", \n        \"compass_right\": -0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 4862\n      }, \n      \"12\": {\n        \"compass_degrees\":
+        270.0, \n        \"compass_point\": \"W\", \n        \"compass_right\": -1.0,
+        \n        \"compass_up\": -0.0, \n        \"ct\": 20685\n      }, \n      \"13\":
+        {\n        \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 31167\n      }, \n      \"14\": {\n        \"compass_degrees\":
+        315.0, \n        \"compass_point\": \"NW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 25783\n      },
+        \n      \"15\": {\n        \"compass_degrees\": 337.5, \n        \"compass_point\":
+        \"NNW\", \n        \"compass_right\": -0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 2490\n      }, \n      \"2\": {\n        \"compass_degrees\":
+        45.0, \n        \"compass_point\": \"NE\", \n        \"compass_right\": 0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 4\n      }, \n
+        \     \"5\": {\n        \"compass_degrees\": 112.5, \n        \"compass_point\":
+        \"ESE\", \n        \"compass_right\": 0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 2\n      }, \n      \"most_common\": {\n
+        \       \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 31167\n      }\n    }\n  }, \n  \"677\": {\n    \"AT\":
+        {\n      \"av\": -63.056, \n      \"ct\": 177556, \n      \"mn\": -97.249,
+        \n      \"mx\": -16.853\n    }, \n    \"First_UTC\": \"2020-10-21T19:51:31Z\",
+        \n    \"HWS\": {\n      \"av\": 7.887, \n      \"ct\": 88610, \n      \"mn\":
+        0.511, \n      \"mx\": 23.197\n    }, \n    \"Last_UTC\": \"2020-10-22T20:31:06Z\",
+        \n    \"Month_ordinal\": 11, \n    \"Northern_season\": \"mid winter\", \n
+        \   \"PRE\": {\n      \"av\": 748.698, \n      \"ct\": 887776, \n      \"mn\":
+        720.5873, \n      \"mx\": 767.4249\n    }, \n    \"Season\": \"fall\", \n
+        \   \"Southern_season\": \"mid summer\", \n    \"WD\": {\n      \"0\": {\n
+        \       \"compass_degrees\": 0.0, \n        \"compass_point\": \"N\", \n        \"compass_right\":
+        0.0, \n        \"compass_up\": 1.0, \n        \"ct\": 511\n      }, \n      \"1\":
+        {\n        \"compass_degrees\": 22.5, \n        \"compass_point\": \"NNE\",
+        \n        \"compass_right\": 0.382683432365, \n        \"compass_up\": 0.923879532511,
+        \n        \"ct\": 12\n      }, \n      \"10\": {\n        \"compass_degrees\":
+        225.0, \n        \"compass_point\": \"SW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": -0.707106781187, \n        \"ct\": 3083\n      },
+        \n      \"11\": {\n        \"compass_degrees\": 247.5, \n        \"compass_point\":
+        \"WSW\", \n        \"compass_right\": -0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 3370\n      }, \n      \"12\": {\n        \"compass_degrees\":
+        270.0, \n        \"compass_point\": \"W\", \n        \"compass_right\": -1.0,
+        \n        \"compass_up\": -0.0, \n        \"ct\": 19454\n      }, \n      \"13\":
+        {\n        \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 34749\n      }, \n      \"14\": {\n        \"compass_degrees\":
+        315.0, \n        \"compass_point\": \"NW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 24014\n      },
+        \n      \"15\": {\n        \"compass_degrees\": 337.5, \n        \"compass_point\":
+        \"NNW\", \n        \"compass_right\": -0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 3413\n      }, \n      \"2\": {\n        \"compass_degrees\":
+        45.0, \n        \"compass_point\": \"NE\", \n        \"compass_right\": 0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 1\n      }, \n
+        \     \"5\": {\n        \"compass_degrees\": 112.5, \n        \"compass_point\":
+        \"ESE\", \n        \"compass_right\": 0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 3\n      }, \n      \"most_common\": {\n
+        \       \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 34749\n      }\n    }\n  }, \n  \"678\": {\n    \"AT\":
+        {\n      \"av\": -62.562, \n      \"ct\": 177556, \n      \"mn\": -97.728,
+        \n      \"mx\": -9.055\n    }, \n    \"First_UTC\": \"2020-10-22T20:31:06Z\",
+        \n    \"HWS\": {\n      \"av\": 5.246, \n      \"ct\": 86963, \n      \"mn\":
+        0.244, \n      \"mx\": 18.399\n    }, \n    \"Last_UTC\": \"2020-10-23T21:10:41Z\",
+        \n    \"Month_ordinal\": 11, \n    \"Northern_season\": \"mid winter\", \n
+        \   \"PRE\": {\n      \"av\": 743.741, \n      \"ct\": 887777, \n      \"mn\":
+        717.7254, \n      \"mx\": 760.2834\n    }, \n    \"Season\": \"fall\", \n
+        \   \"Southern_season\": \"mid summer\", \n    \"WD\": {\n      \"0\": {\n
+        \       \"compass_degrees\": 0.0, \n        \"compass_point\": \"N\", \n        \"compass_right\":
+        0.0, \n        \"compass_up\": 1.0, \n        \"ct\": 2680\n      }, \n      \"1\":
+        {\n        \"compass_degrees\": 22.5, \n        \"compass_point\": \"NNE\",
+        \n        \"compass_right\": 0.382683432365, \n        \"compass_up\": 0.923879532511,
+        \n        \"ct\": 1025\n      }, \n      \"10\": {\n        \"compass_degrees\":
+        225.0, \n        \"compass_point\": \"SW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": -0.707106781187, \n        \"ct\": 10492\n      },
+        \n      \"11\": {\n        \"compass_degrees\": 247.5, \n        \"compass_point\":
+        \"WSW\", \n        \"compass_right\": -0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 3499\n      }, \n      \"12\": {\n        \"compass_degrees\":
+        270.0, \n        \"compass_point\": \"W\", \n        \"compass_right\": -1.0,
+        \n        \"compass_up\": -0.0, \n        \"ct\": 22094\n      }, \n      \"13\":
+        {\n        \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 26617\n      }, \n      \"14\": {\n        \"compass_degrees\":
+        315.0, \n        \"compass_point\": \"NW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 14104\n      },
+        \n      \"15\": {\n        \"compass_degrees\": 337.5, \n        \"compass_point\":
+        \"NNW\", \n        \"compass_right\": -0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 4388\n      }, \n      \"2\": {\n        \"compass_degrees\":
+        45.0, \n        \"compass_point\": \"NE\", \n        \"compass_right\": 0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 305\n      },
+        \n      \"3\": {\n        \"compass_degrees\": 67.5, \n        \"compass_point\":
+        \"ENE\", \n        \"compass_right\": 0.923879532511, \n        \"compass_up\":
+        0.382683432365, \n        \"ct\": 31\n      }, \n      \"5\": {\n        \"compass_degrees\":
+        112.5, \n        \"compass_point\": \"ESE\", \n        \"compass_right\":
+        0.923879532511, \n        \"compass_up\": -0.382683432365, \n        \"ct\":
+        211\n      }, \n      \"6\": {\n        \"compass_degrees\": 135.0, \n        \"compass_point\":
+        \"SE\", \n        \"compass_right\": 0.707106781187, \n        \"compass_up\":
+        -0.707106781187, \n        \"ct\": 45\n      }, \n      \"7\": {\n        \"compass_degrees\":
+        157.5, \n        \"compass_point\": \"SSE\", \n        \"compass_right\":
+        0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        174\n      }, \n      \"8\": {\n        \"compass_degrees\": 180.0, \n        \"compass_point\":
+        \"S\", \n        \"compass_right\": 0.0, \n        \"compass_up\": -1.0, \n
+        \       \"ct\": 437\n      }, \n      \"9\": {\n        \"compass_degrees\":
+        202.5, \n        \"compass_point\": \"SSW\", \n        \"compass_right\":
+        -0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        861\n      }, \n      \"most_common\": {\n        \"compass_degrees\": 292.5,
+        \n        \"compass_point\": \"WNW\", \n        \"compass_right\": -0.923879532511,
+        \n        \"compass_up\": 0.382683432365, \n        \"ct\": 26617\n      }\n
+        \   }\n  }, \n  \"679\": {\n    \"AT\": {\n      \"av\": -62.551, \n      \"ct\":
+        177554, \n      \"mn\": -96.644, \n      \"mx\": -11.561\n    }, \n    \"First_UTC\":
+        \"2020-10-23T21:10:41Z\", \n    \"HWS\": {\n      \"av\": 5.565, \n      \"ct\":
+        87171, \n      \"mn\": 0.231, \n      \"mx\": 19.409000000000002\n    }, \n
+        \   \"Last_UTC\": \"2020-10-24T21:50:16Z\", \n    \"Month_ordinal\": 11, \n
+        \   \"Northern_season\": \"mid winter\", \n    \"PRE\": {\n      \"av\": 744.529,
+        \n      \"ct\": 887776, \n      \"mn\": 719.4178, \n      \"mx\": 763.2724\n
+        \   }, \n    \"Season\": \"fall\", \n    \"Southern_season\": \"mid summer\",
+        \n    \"WD\": {\n      \"0\": {\n        \"compass_degrees\": 0.0, \n        \"compass_point\":
+        \"N\", \n        \"compass_right\": 0.0, \n        \"compass_up\": 1.0, \n
+        \       \"ct\": 2049\n      }, \n      \"1\": {\n        \"compass_degrees\":
+        22.5, \n        \"compass_point\": \"NNE\", \n        \"compass_right\": 0.382683432365,
+        \n        \"compass_up\": 0.923879532511, \n        \"ct\": 657\n      },
+        \n      \"10\": {\n        \"compass_degrees\": 225.0, \n        \"compass_point\":
+        \"SW\", \n        \"compass_right\": -0.707106781187, \n        \"compass_up\":
+        -0.707106781187, \n        \"ct\": 11924\n      }, \n      \"11\": {\n        \"compass_degrees\":
+        247.5, \n        \"compass_point\": \"WSW\", \n        \"compass_right\":
+        -0.923879532511, \n        \"compass_up\": -0.382683432365, \n        \"ct\":
+        1379\n      }, \n      \"12\": {\n        \"compass_degrees\": 270.0, \n        \"compass_point\":
+        \"W\", \n        \"compass_right\": -1.0, \n        \"compass_up\": -0.0,
+        \n        \"ct\": 21329\n      }, \n      \"13\": {\n        \"compass_degrees\":
+        292.5, \n        \"compass_point\": \"WNW\", \n        \"compass_right\":
+        -0.923879532511, \n        \"compass_up\": 0.382683432365, \n        \"ct\":
+        28774\n      }, \n      \"14\": {\n        \"compass_degrees\": 315.0, \n
+        \       \"compass_point\": \"NW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 15570\n      },
+        \n      \"15\": {\n        \"compass_degrees\": 337.5, \n        \"compass_point\":
+        \"NNW\", \n        \"compass_right\": -0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 3784\n      }, \n      \"2\": {\n        \"compass_degrees\":
+        45.0, \n        \"compass_point\": \"NE\", \n        \"compass_right\": 0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 83\n      }, \n
+        \     \"3\": {\n        \"compass_degrees\": 67.5, \n        \"compass_point\":
+        \"ENE\", \n        \"compass_right\": 0.923879532511, \n        \"compass_up\":
+        0.382683432365, \n        \"ct\": 17\n      }, \n      \"5\": {\n        \"compass_degrees\":
+        112.5, \n        \"compass_point\": \"ESE\", \n        \"compass_right\":
+        0.923879532511, \n        \"compass_up\": -0.382683432365, \n        \"ct\":
+        138\n      }, \n      \"6\": {\n        \"compass_degrees\": 135.0, \n        \"compass_point\":
+        \"SE\", \n        \"compass_right\": 0.707106781187, \n        \"compass_up\":
+        -0.707106781187, \n        \"ct\": 11\n      }, \n      \"7\": {\n        \"compass_degrees\":
+        157.5, \n        \"compass_point\": \"SSE\", \n        \"compass_right\":
+        0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        137\n      }, \n      \"8\": {\n        \"compass_degrees\": 180.0, \n        \"compass_point\":
+        \"S\", \n        \"compass_right\": 0.0, \n        \"compass_up\": -1.0, \n
+        \       \"ct\": 410\n      }, \n      \"9\": {\n        \"compass_degrees\":
+        202.5, \n        \"compass_point\": \"SSW\", \n        \"compass_right\":
+        -0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        909\n      }, \n      \"most_common\": {\n        \"compass_degrees\": 292.5,
+        \n        \"compass_point\": \"WNW\", \n        \"compass_right\": -0.923879532511,
+        \n        \"compass_up\": 0.382683432365, \n        \"ct\": 28774\n      }\n
+        \   }\n  }, \n  \"680\": {\n    \"AT\": {\n      \"av\": -61.789, \n      \"ct\":
+        168902, \n      \"mn\": -96.811, \n      \"mx\": -15.298\n    }, \n    \"First_UTC\":
+        \"2020-10-24T21:50:16Z\", \n    \"HWS\": {\n      \"av\": 6.517, \n      \"ct\":
+        88478, \n      \"mn\": 0.275, \n      \"mx\": 24.235\n    }, \n    \"Last_UTC\":
+        \"2020-10-25T22:29:51Z\", \n    \"Month_ordinal\": 11, \n    \"Northern_season\":
+        \"mid winter\", \n    \"PRE\": {\n      \"av\": 743.99, \n      \"ct\": 887767,
+        \n      \"mn\": 717.1398, \n      \"mx\": 764.0093\n    }, \n    \"Season\":
+        \"fall\", \n    \"Southern_season\": \"mid summer\", \n    \"WD\": {\n      \"0\":
+        {\n        \"compass_degrees\": 0.0, \n        \"compass_point\": \"N\", \n
+        \       \"compass_right\": 0.0, \n        \"compass_up\": 1.0, \n        \"ct\":
+        1033\n      }, \n      \"1\": {\n        \"compass_degrees\": 22.5, \n        \"compass_point\":
+        \"NNE\", \n        \"compass_right\": 0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 133\n      }, \n      \"10\": {\n        \"compass_degrees\":
+        225.0, \n        \"compass_point\": \"SW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": -0.707106781187, \n        \"ct\": 6463\n      },
+        \n      \"11\": {\n        \"compass_degrees\": 247.5, \n        \"compass_point\":
+        \"WSW\", \n        \"compass_right\": -0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 2556\n      }, \n      \"12\": {\n        \"compass_degrees\":
+        270.0, \n        \"compass_point\": \"W\", \n        \"compass_right\": -1.0,
+        \n        \"compass_up\": -0.0, \n        \"ct\": 21280\n      }, \n      \"13\":
+        {\n        \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 34787\n      }, \n      \"14\": {\n        \"compass_degrees\":
+        315.0, \n        \"compass_point\": \"NW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 18673\n      },
+        \n      \"15\": {\n        \"compass_degrees\": 337.5, \n        \"compass_point\":
+        \"NNW\", \n        \"compass_right\": -0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 3262\n      }, \n      \"5\": {\n        \"compass_degrees\":
+        112.5, \n        \"compass_point\": \"ESE\", \n        \"compass_right\":
+        0.923879532511, \n        \"compass_up\": -0.382683432365, \n        \"ct\":
+        10\n      }, \n      \"6\": {\n        \"compass_degrees\": 135.0, \n        \"compass_point\":
+        \"SE\", \n        \"compass_right\": 0.707106781187, \n        \"compass_up\":
+        -0.707106781187, \n        \"ct\": 6\n      }, \n      \"7\": {\n        \"compass_degrees\":
+        157.5, \n        \"compass_point\": \"SSE\", \n        \"compass_right\":
+        0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        23\n      }, \n      \"8\": {\n        \"compass_degrees\": 180.0, \n        \"compass_point\":
+        \"S\", \n        \"compass_right\": 0.0, \n        \"compass_up\": -1.0, \n
+        \       \"ct\": 76\n      }, \n      \"9\": {\n        \"compass_degrees\":
+        202.5, \n        \"compass_point\": \"SSW\", \n        \"compass_right\":
+        -0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        176\n      }, \n      \"most_common\": {\n        \"compass_degrees\": 292.5,
+        \n        \"compass_point\": \"WNW\", \n        \"compass_right\": -0.923879532511,
+        \n        \"compass_up\": 0.382683432365, \n        \"ct\": 34787\n      }\n
+        \   }\n  }, \n  \"681\": {\n    \"AT\": {\n      \"av\": -62.434, \n      \"ct\":
+        88778, \n      \"mn\": -95.447, \n      \"mx\": -4.444\n    }, \n    \"First_UTC\":
+        \"2020-10-25T22:29:51Z\", \n    \"HWS\": {\n      \"av\": 5.632, \n      \"ct\":
+        87184, \n      \"mn\": 0.228, \n      \"mx\": 18.577\n    }, \n    \"Last_UTC\":
+        \"2020-10-26T23:09:26Z\", \n    \"Month_ordinal\": 11, \n    \"Northern_season\":
+        \"mid winter\", \n    \"PRE\": {\n      \"av\": 743.55, \n      \"ct\": 887777,
+        \n      \"mn\": 718.463, \n      \"mx\": 760.2244\n    }, \n    \"Season\":
+        \"fall\", \n    \"Southern_season\": \"mid summer\", \n    \"WD\": {\n      \"0\":
+        {\n        \"compass_degrees\": 0.0, \n        \"compass_point\": \"N\", \n
+        \       \"compass_right\": 0.0, \n        \"compass_up\": 1.0, \n        \"ct\":
+        1872\n      }, \n      \"1\": {\n        \"compass_degrees\": 22.5, \n        \"compass_point\":
+        \"NNE\", \n        \"compass_right\": 0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 881\n      }, \n      \"10\": {\n        \"compass_degrees\":
+        225.0, \n        \"compass_point\": \"SW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": -0.707106781187, \n        \"ct\": 12182\n      },
+        \n      \"11\": {\n        \"compass_degrees\": 247.5, \n        \"compass_point\":
+        \"WSW\", \n        \"compass_right\": -0.923879532511, \n        \"compass_up\":
+        -0.382683432365, \n        \"ct\": 1249\n      }, \n      \"12\": {\n        \"compass_degrees\":
+        270.0, \n        \"compass_point\": \"W\", \n        \"compass_right\": -1.0,
+        \n        \"compass_up\": -0.0, \n        \"ct\": 22409\n      }, \n      \"13\":
+        {\n        \"compass_degrees\": 292.5, \n        \"compass_point\": \"WNW\",
+        \n        \"compass_right\": -0.923879532511, \n        \"compass_up\": 0.382683432365,
+        \n        \"ct\": 27816\n      }, \n      \"14\": {\n        \"compass_degrees\":
+        315.0, \n        \"compass_point\": \"NW\", \n        \"compass_right\": -0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 15971\n      },
+        \n      \"15\": {\n        \"compass_degrees\": 337.5, \n        \"compass_point\":
+        \"NNW\", \n        \"compass_right\": -0.382683432365, \n        \"compass_up\":
+        0.923879532511, \n        \"ct\": 3412\n      }, \n      \"2\": {\n        \"compass_degrees\":
+        45.0, \n        \"compass_point\": \"NE\", \n        \"compass_right\": 0.707106781187,
+        \n        \"compass_up\": 0.707106781187, \n        \"ct\": 201\n      },
+        \n      \"3\": {\n        \"compass_degrees\": 67.5, \n        \"compass_point\":
+        \"ENE\", \n        \"compass_right\": 0.923879532511, \n        \"compass_up\":
+        0.382683432365, \n        \"ct\": 57\n      }, \n      \"5\": {\n        \"compass_degrees\":
+        112.5, \n        \"compass_point\": \"ESE\", \n        \"compass_right\":
+        0.923879532511, \n        \"compass_up\": -0.382683432365, \n        \"ct\":
+        129\n      }, \n      \"6\": {\n        \"compass_degrees\": 135.0, \n        \"compass_point\":
+        \"SE\", \n        \"compass_right\": 0.707106781187, \n        \"compass_up\":
+        -0.707106781187, \n        \"ct\": 17\n      }, \n      \"7\": {\n        \"compass_degrees\":
+        157.5, \n        \"compass_point\": \"SSE\", \n        \"compass_right\":
+        0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        112\n      }, \n      \"8\": {\n        \"compass_degrees\": 180.0, \n        \"compass_point\":
+        \"S\", \n        \"compass_right\": 0.0, \n        \"compass_up\": -1.0, \n
+        \       \"ct\": 387\n      }, \n      \"9\": {\n        \"compass_degrees\":
+        202.5, \n        \"compass_point\": \"SSW\", \n        \"compass_right\":
+        -0.382683432365, \n        \"compass_up\": -0.923879532511, \n        \"ct\":
+        489\n      }, \n      \"most_common\": {\n        \"compass_degrees\": 292.5,
+        \n        \"compass_point\": \"WNW\", \n        \"compass_right\": -0.923879532511,
+        \n        \"compass_up\": 0.382683432365, \n        \"ct\": 27816\n      }\n
+        \   }\n  }, \n  \"sol_keys\": [\n    \"675\", \n    \"676\", \n    \"677\",
+        \n    \"678\", \n    \"679\", \n    \"680\", \n    \"681\"\n  ], \n  \"validity_checks\":
+        {\n    \"674\": {\n      \"AT\": {\n        \"sol_hours_with_data\": [\n          0,
+        \n          1, \n          2, \n          3, \n          4, \n          5,
+        \n          6, \n          7, \n          8, \n          9, \n          10,
+        \n          11, \n          12, \n          13, \n          14, \n          15,
+        \n          16, \n          17, \n          18, \n          19, \n          20,
+        \n          21, \n          22, \n          23\n        ], \n        \"valid\":
+        true\n      }, \n      \"HWS\": {\n        \"sol_hours_with_data\": [\n          0,
+        \n          1, \n          2, \n          3, \n          4, \n          5,
+        \n          6, \n          7, \n          8, \n          9, \n          10,
+        \n          11, \n          12, \n          13, \n          14, \n          15,
+        \n          16, \n          17, \n          18, \n          19, \n          20,
+        \n          21, \n          22, \n          23\n        ], \n        \"valid\":
+        true\n      }, \n      \"PRE\": {\n        \"sol_hours_with_data\": [\n          0,
+        \n          1, \n          2, \n          3, \n          4, \n          5,
+        \n          6, \n          7, \n          8, \n          9, \n          10,
+        \n          11, \n          12, \n          13, \n          14, \n          15,
+        \n          16, \n          17, \n          18, \n          19, \n          20,
+        \n          21, \n          22, \n          23\n        ], \n        \"valid\":
+        true\n      }, \n      \"WD\": {\n        \"sol_hours_with_data\": [\n          0,
+        \n          1, \n          2, \n          3, \n          4, \n          5,
+        \n          6, \n          7, \n          8, \n          9, \n          10,
+        \n          11, \n          12, \n          13, \n          14, \n          15,
+        \n          16, \n          17, \n          18, \n          19, \n          20,
+        \n          21, \n          22, \n          23\n        ], \n        \"valid\":
+        true\n      }\n    }, \n    \"675\": {\n      \"AT\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"HWS\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"PRE\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"WD\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }\n    }, \n    \"676\": {\n      \"AT\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }, \n      \"HWS\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }, \n      \"PRE\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }, \n      \"WD\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }\n    }, \n    \"677\":
+        {\n      \"AT\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      },
+        \n      \"HWS\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      },
+        \n      \"PRE\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      },
+        \n      \"WD\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      }\n
+        \   }, \n    \"678\": {\n      \"AT\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"HWS\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"PRE\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"WD\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }\n    }, \n    \"679\": {\n      \"AT\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }, \n      \"HWS\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }, \n      \"PRE\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }, \n      \"WD\":
+        {\n        \"sol_hours_with_data\": [\n          0, \n          1, \n          2,
+        \n          3, \n          4, \n          5, \n          6, \n          7,
+        \n          8, \n          9, \n          10, \n          11, \n          12,
+        \n          13, \n          14, \n          15, \n          16, \n          17,
+        \n          18, \n          19, \n          20, \n          21, \n          22,
+        \n          23\n        ], \n        \"valid\": true\n      }\n    }, \n    \"680\":
+        {\n      \"AT\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      },
+        \n      \"HWS\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      },
+        \n      \"PRE\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      },
+        \n      \"WD\": {\n        \"sol_hours_with_data\": [\n          0, \n          1,
+        \n          2, \n          3, \n          4, \n          5, \n          6,
+        \n          7, \n          8, \n          9, \n          10, \n          11,
+        \n          12, \n          13, \n          14, \n          15, \n          16,
+        \n          17, \n          18, \n          19, \n          20, \n          21,
+        \n          22, \n          23\n        ], \n        \"valid\": true\n      }\n
+        \   }, \n    \"681\": {\n      \"AT\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"HWS\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"PRE\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }, \n      \"WD\": {\n        \"sol_hours_with_data\":
+        [\n          0, \n          1, \n          2, \n          3, \n          4,
+        \n          5, \n          6, \n          7, \n          8, \n          9,
+        \n          10, \n          11, \n          12, \n          13, \n          14,
+        \n          15, \n          16, \n          17, \n          18, \n          19,
+        \n          20, \n          21, \n          22, \n          23\n        ],
+        \n        \"valid\": true\n      }\n    }, \n    \"682\": {\n      \"AT\":
+        {\n        \"sol_hours_with_data\": [\n          0\n        ], \n        \"valid\":
+        false\n      }, \n      \"HWS\": {\n        \"sol_hours_with_data\": [\n          0\n
+        \       ], \n        \"valid\": false\n      }, \n      \"PRE\": {\n        \"sol_hours_with_data\":
+        [\n          0\n        ], \n        \"valid\": false\n      }, \n      \"WD\":
+        {\n        \"sol_hours_with_data\": [\n          0\n        ], \n        \"valid\":
+        false\n      }\n    }, \n    \"sol_hours_required\": 18, \n    \"sols_checked\":
+        [\n      \"674\", \n      \"675\", \n      \"676\", \n      \"677\", \n      \"678\",
+        \n      \"679\", \n      \"680\", \n      \"681\", \n      \"682\"\n    ]\n
+        \ }\n}\n"
+  recorded_at: 2025-03-17 05:27:55 GMT
+  recorded_with: vcr/1.7.0, webmockr/2.0.0

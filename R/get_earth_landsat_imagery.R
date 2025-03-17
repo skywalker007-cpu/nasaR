@@ -62,8 +62,8 @@ get_earth_landsat_imagery <- function(
   }
 
   return(list(
-    message = paste("Image saved as:", image_file),
-    file_path = image_file,
+    message = if (download_image) paste("Image saved as:", image_file) else "Image not saved",
+    file_path = if (download_image) image_file else NULL,
     raw_data = image_data
   ))
 }

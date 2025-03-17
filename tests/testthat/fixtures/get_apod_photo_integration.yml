@@ -1,0 +1,42 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nasa.gov/planetary/apod?api_key=<NASA_API_KEY>
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      date: Mon, 17 Mar 2025 05:27:35 GMT
+      content-type: application/json
+      transfer-encoding: chunked
+      connection: keep-alive
+      access-control-allow-origin: '*'
+      access-control-expose-headers: X-RateLimit-Limit, X-RateLimit-Remaining
+      age: '0'
+      content-encoding: gzip
+      strict-transport-security: max-age=31536000; includeSubDomains; preload
+      vary: Accept-Encoding
+      via: https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      x-api-umbrella-request-id: clka95janlg1f46bs0n0
+      x-cache: MISS
+      x-content-type-options: nosniff
+      x-ratelimit-limit: '2000'
+      x-ratelimit-remaining: '1665'
+      x-vcap-request-id: c1bdf6e6-800b-4b20-6125-5eede2059365
+      x-xss-protection: 1; mode=block
+      x-frame-options: DENY
+    body:
+      encoding: ''
+      file: no
+      string: |
+        {"copyright":"\nBrian Hopkins \n(East Coast Astronomer)\n","date":"2025-03-17","explanation":"Thor not only has his own day (Thursday), but a helmet in the heavens.  Popularly called Thor's Helmet, NGC 2359 is a hat-shaped cosmic cloud with wing-like appendages. Heroically sized even for a Norse god, Thor's Helmet is about 30 light-years across. In fact, the cosmic head-covering is more like an interstellar bubble, blown by a fast wind from the bright, massive star near the bubble's center. Known as a Wolf-Rayet star, the central star is an extremely hot giant thought to be in a brief, pre-supernova stage of evolution. NGC 2359 is located about 15,000 light-years away toward the constellation of the Great Overdog. This sharp image is a mixed cocktail of data from  narrowband filters, capturing not only natural looking stars but details of the nebula's filamentary structures. The star in the center of Thor's Helmet is expected to explode in a spectacular supernova sometime within the next few thousand years.","hdurl":"https://apod.nasa.gov/apod/image/2503/ThorHelmet_Hopkins_3888.jpg","media_type":"image","service_version":"v1","title":"Thor's Helmet","url":"https://apod.nasa.gov/apod/image/2503/ThorHelmet_Hopkins_960.jpg"}
+  recorded_at: 2025-03-17 05:27:34 GMT
+  recorded_with: vcr/1.7.0, webmockr/2.0.0
