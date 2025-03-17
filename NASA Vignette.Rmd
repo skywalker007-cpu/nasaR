@@ -1,0 +1,280 @@
+---
+title: "NASA API Package Vignette"
+author: "Haoxiang Xu, Zetian Zhao, Litao Zheng"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# NASA API Wrapper
+
+## Introduction
+
+This vignette demonstrates how to use the "nasaR" package — a wrapper for several NASA RESTful APIs. The package provides eight functions listed below:
+
+-   **get_apod_photo()** – Fetch NASA’s Astronomy Picture of the Day with descriptions.
+
+-   **get_earth_image()** – Download NASA satellite imagery by geographic coordinates.
+
+-   **get_earth_landsat_imagery()** – Retrieve Landsat satellite images of Earth.
+
+-   **get_earth_polychromatic_imaging()** – Access DSCOVR EPIC images of Earth in multiple wavelengths.
+
+-   **get_mars_rover_photos()** – Retrieve images captured by NASA’s Mars rovers.
+
+-   **get_mars_weather()** – Get the latest weather reports from NASA’s Mars missions.
+
+-   **get_neo_data()** – Access Near-Earth Object details and visualize asteroid data.
+
+-   **search_nasa_images()** – Search for NASA images and videos using keywords.
+
+## Installation
+
+Package Installation
+
+```{r}
+install.packages("nasaR/nasaR_0.0.0.9000.tar.gz", repos = NULL, type ="source", quiet = TRUE)
+```
+
+Import Library
+
+```{r}
+library(nasaR)
+```
+
+Import Other Libraries
+
+```{r}
+library(png)
+```
+
+## Functions Detail
+
+### **get_apod_photo()**
+
+Fetch NASA’s Astronomy Picture of the Day with descriptions.
+
+**Required parameters**
+
+| Parameter    | Description              | Default |
+|--------------|--------------------------|---------|
+| `api_key`    | NASA API key             | NULL    |
+| `show_image` | Display the image or not | TRUE    |
+
+```{r}
+# Example
+# api_key <- <<<ENTER API KEY HERE>>>
+# get_apod_photo(api_key, show_image = FALSE)
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/get_apod_photo_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
+
+### **get_earth_image()**
+
+Download NASA satellite imagery by geographic coordinates.
+
+| Parameter | Description             | Default    |
+|-----------|-------------------------|------------|
+| `api_key` | NASA API key            | NULL       |
+| `lat`     | Latitude (-90 to 90)    | NULL       |
+| `lon`     | Longitude (-180 to 180) | NULL       |
+| `date`    | Date (YYYY-MM-DD)       | Sys.Date() |
+| `dim`     | Image size in degrees   | 0.1        |
+
+```{r}
+# Example
+# api_key <- <<<ENTER API KEY HERE>>>
+lat <- 37.7749
+lon <- -122.4194
+# get_earth_image(api_key, lat, lon)
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/get_earth_image_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
+
+### **get_earth_landsat_imagery()**
+
+Retrieve Landsat satellite images of Earth.
+
+| Parameter        | Description             | Default    |
+|------------------|-------------------------|------------|
+| `api_key`        | NASA API key            | NULL       |
+| `lat`            | Latitude (-90 to 90)    | NULL       |
+| `lon`            | Longitude (-180 to 180) | NULL       |
+| `dim`            | Image size in degrees   | 0.025      |
+| `date`           | Date (YYYY-MM-DD)       | Sys.Date() |
+| `cloud_score`    | Cloud score             | FALSE      |
+| `download_image` | Save image or not       | FALSE      |
+
+```{r}
+# Example
+# api_key <- <<<ENTER API KEY HERE>>>
+lat <- 40.7128
+lon <- -74.0060
+# get_earth_landsat_imagery(api_key, lat, lon, download_image = TRUE)
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/get_earth_landsat_imagery_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
+
+### **get_earth_polychromatic_imaging()**
+
+Access DSCOVR EPIC images of Earth in multiple wavelengths.
+
+| Parameter        | Description       | Default    |
+|------------------|-------------------|------------|
+| `api_key`        | NASA API key      | NULL       |
+| `endpoint`       | EPIC endpoint     | natural    |
+| `date`           | Date (YYYY-MM-DD) | Sys.Date() |
+| `download_image` | Save image or not | FALSE      |
+
+```{r}
+# Example
+# api_key <- <<<ENTER API KEY HERE>>>
+# get_earth_polychromatic_imaging(
+#   api_key = api_key,
+#   endpoint = "natural/date",
+#   date = "2019-05-30",
+#   download_image = TRUE
+# )
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/get_earth_polychromatic_imaging_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
+
+### **get_mars_rover_photos()**
+
+Retrieve images captured by NASA’s Mars rovers.
+
+| Parameter    | Description                   | Default |
+|--------------|-------------------------------|---------|
+| `api_key`    | NASA API key                  | NULL    |
+| `sol`        | Integer for Martian sol (day) | NULL    |
+| `earth_date` | Date (YYYY-MM-DD)             | NULL    |
+
+```{r}
+# Example
+# api_key <- <<<ENTER API KEY HERE>>>
+# get_mars_rover_photos(api_key, sol = 1000)
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/get_mars_rover_photos_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
+
+### **get_mars_weather()**
+
+Get the latest weather reports from NASA’s Mars missions.
+
+| Parameter | Description        | Default |
+|-----------|--------------------|---------|
+| `api_key` | NASA API key       | NULL    |
+| `version` | API version number | 1.0     |
+
+```{r}
+# Example
+# api_key <- <<<ENTER API KEY HERE>>>
+# get_mars_weather(api_key, version = 1.0)
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/get_mars_weather_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
+
+### **get_neo_data()**
+
+Access Near-Earth Object details and visualize asteroid data.
+
+| Parameter    | Description  | Default |
+|--------------|--------------|---------|
+| `api_key`    | NASA API key | NULL    |
+| `start_date` | Start date   | NULL    |
+| `END_date`   | End date     | NULL    |
+
+```{r}
+# Example
+# api_key <- <<<ENTER API KEY HERE>>>
+# get_neo_data(
+#   api_key, 
+#   start_date = "2023-01-01", 
+#   end_date = "2023-01-02")
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/get_neo_data_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
+
+### **search_nasa_images()**
+
+Search for NASA images and videos using keywords.
+
+| Parameter | Description                    | Default |
+|-----------|--------------------------------|---------|
+| `query`   | Character string to search for | NULL    |
+
+```{r}
+# Example
+# search_nasa_images(query = "mars")
+```
+
+#### Example output
+
+```{r}
+img <- readPNG("sample_output/search_nasa_images_output.png")
+par(mar = c(0, 0, 0, 0))
+plot(NA, type = "n", xlim = c(0, 1), ylim = c(0, 1), axes = FALSE, xlab = "", ylab = "")
+rasterImage(img, 0, 0, 1, 1)
+```
+
