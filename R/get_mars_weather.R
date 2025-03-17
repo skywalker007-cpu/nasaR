@@ -47,6 +47,8 @@ get_mars_weather <- function(
 
   sol_list <- list()
   for (sol in sol_keys) {
+    sol_num <- as.numeric(sol)
+    if (is.na(sol_num)) next
     sol_data <- as.list(weather_data[[sol]])
     sol_row <- list(sol = as.numeric(sol))
 
