@@ -89,3 +89,8 @@ get_neo_data <- function(start_date, end_date, api_key = "XFsDPHBjdABhXfquwqnJSf
 
 neo_data <- get_neo_data("2023-01-01", "2023-01-02")
 print(neo_data)
+
+library(ggplot2)
+neo_df <- get_neo_data("2025-03-10", "2025-03-15")
+ggplot(neo_df, aes(x = miss_distance_km, y = relative_velocity_km_per_sec)) +
+  geom_point() + labs(title = "Asteroid Speed vs. Distance")

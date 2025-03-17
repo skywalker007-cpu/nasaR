@@ -47,7 +47,7 @@ get_mars_weather <- function(
 
   sol_list <- list()
   for (sol in sol_keys) {
-    sol_data <- weather_data[[sol]]
+    sol_data <- as.list(weather_data[[sol]])
     sol_row <- list(sol = as.numeric(sol))
 
     if ("AT" %in% names(sol_data)) {
@@ -100,7 +100,7 @@ get_mars_weather <- function(
     sol_row$Season <- if ("Season" %in% names(sol_data)) sol_data$Season else NA
     sol_list[[sol]] <- sol_row
   }
-  
+
   if (!is.null(sol_data$AT)) {
     sol_row$AT_avg <- as.numeric(sol_data$AT$av) %||% NA
     sol_row$AT_min <- as.numeric(sol_data$AT$mn) %||% NA
